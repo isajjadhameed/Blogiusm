@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif, serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: azure;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header Section */
+
+header {
+  align-items: center;
+
+  display: flex;
+  color: aliceblue;
+  background-color: rgb(1, 1, 5);
+  padding: 2px 0;
+}
+
+.mainImg {
+  background-image: url(/images/codeImg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  margin-right: 0;
+  padding: 0;
+}
+
+header a {
+  color: white;
+}
+
+#menu li {
+  padding: 5px;
+}
+
+#logo {
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+
+/* Blogs Section */
+
+#main {
+  display: flex;
+  font-family: sans-serif;
+}
+
+aside {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 20vw;
+  background-color: beige;
+  padding: 10px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0%;
+}
+
+aside ul a {
+  color: rgb(1, 1, 5);
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid rgb(173, 171, 171);
+}
+
+aside img {
+  width: 100%;
+}
+
+article {
+  padding: 10px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-box {
+  border: 1px solid #eee;
+  flex-basis: 32%;
+  max-width: 370px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-box h3 {
+  margin: 5px 0 10px;
+}
+
+.services-box p {
+  margin: 0 0 10px;
+}
+
+.call-to-action {
+  align-self: flex-start;
+  margin-top: auto;
+  display: block;
+  padding: 8px 13px;
+}
+
+.call-to-action a:hover {
+  color: grey;
+  background: transparent;
+}
+
+.services-box img {
+  width: 100%;
+  height: 320px;
+  transition-duration: 1s;
+}
+
+.services-box img:hover {
+  transform: scale(1.1);
+}
+
+/* Blogs Section */
+
+/* Footer Section */
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(1, 1, 5);
+}
+
+footer h4 {
+  color: #eee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Footer Section */
+
+/* Responsiveness */
+
+@media screen and (max-width: 850px) {
+  .services-box {
+    flex-basis: 48%;
+  }
+
+  aside {
+    flex: 0 0 30vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  #main {
+    flex-direction: column;
+  }
+
+  article {
+    order: -1;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
+
+/* Responsiveness */
